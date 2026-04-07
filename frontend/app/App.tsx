@@ -5,6 +5,8 @@ import {
 	Button,
 	Card,
 	CardContent,
+	CardHeader,
+	CardTitle,
 	Footer,
 	FormField,
 	GridDecoration,
@@ -163,6 +165,33 @@ export function App() {
 					</Card>
 				</div>
 			</main>
+
+			<section className="flex justify-center px-4 pb-10 pt-2 md:pb-14">
+				<div className="w-full max-w-md">
+					<Card variant="outlined" className="border-dashed border-border/80 text-center">
+						<CardHeader className="pb-2">
+							<CardTitle className="text-base">Deploy on Render</CardTitle>
+						</CardHeader>
+						<CardContent className="flex justify-center pt-0">
+							<a
+								href="https://render.com/deploy?repo=https://github.com/ojusave/rivet-stream"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="inline-flex shrink-0"
+								aria-label="Deploy to Render"
+							>
+								<img
+									src="https://render.com/images/deploy-to-render-button.svg"
+									alt=""
+									width={155}
+									height={40}
+									decoding="async"
+								/>
+							</a>
+						</CardContent>
+					</Card>
+				</div>
+			</section>
 
 			<Footer
 				centered
