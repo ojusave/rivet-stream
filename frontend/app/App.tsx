@@ -89,6 +89,15 @@ export function App() {
 			/>
 
 			<main className="relative z-10 mx-auto flex w-full max-w-3xl flex-1 flex-col gap-6 px-4 py-10 sm:px-6">
+				<div className="text-center">
+					<h1 className="font-sans text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+						Stream Processor
+					</h1>
+					<p className="mx-auto mt-3 max-w-xl text-base text-muted-foreground sm:text-lg">
+						Real-time top-K processing — add values and watch the leaderboard update live across all clients.
+					</p>
+				</div>
+
 				<div className="grid gap-3 sm:grid-cols-3">
 					{[
 						{ label: "Total Values", value: totalCount },
